@@ -79,11 +79,10 @@ S     S
     
   !!`,
   
-}
+};
 
 
 
-let word = 'IS A FACE! SHHH...';
 
 const biggify = (word) => {
   let letters = word.split('');
@@ -98,8 +97,6 @@ const biggify = (word) => {
   print_results(results);
 }
 
-module.exports = biggify;
-
 const build_letter_pixels = (letter) => {
   if(letter === '!') letter = 'exclaim';
   if(letter === '.') letter = 'period';
@@ -112,11 +109,6 @@ const build_letter_pixels = (letter) => {
 const print_results = (results) => {
   console.log(results.join('\n'));
 }
-biggify(word);
-
-
-
-
-
 
  
+module.exports = biggify;
