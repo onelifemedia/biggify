@@ -167,7 +167,7 @@ ZZZZZZZ `,
     
   ..
   ..`,
-  exclaim: ` !!
+  exclaim: `  !!
   !!
   !!
   !!
@@ -175,9 +175,6 @@ ZZZZZZZ `,
   !!`,
   
 };
-
-
-
 
 const biggify = (word) => {
   let letters = word.split('');
@@ -189,8 +186,9 @@ const biggify = (word) => {
       results[j] += letter[j];
     }
   }
-  print_results(results);
-}
+
+  return results.join('\n');
+};
 
 const build_letter_pixels = (letter) => {
   letter = letter.toUpperCase(); // TODO: Implement lowercase letters? Nah.
@@ -200,17 +198,6 @@ const build_letter_pixels = (letter) => {
   
   let pixel_array = characters[letter].split('\n');
   return pixel_array;
-}
-
-const print_results = (results) => {
-  console.log(results.join('\n'));
-}
+};
 
 module.exports = biggify;
-
-
-
-
-
-
-
