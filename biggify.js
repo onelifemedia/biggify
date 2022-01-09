@@ -167,12 +167,24 @@ ZZZZZZZ `,
     
   ..
   ..`,
-  exclaim: `  !!
-  !!
-  !!
-  !!
+  comma: `    
     
-  !!`,
+    
+    
+  ,,
+  ,,`,
+  exclaim: `  !! 
+  !! 
+  !! 
+  !! 
+     
+  !! `,
+  quote: `  '' 
+  '' 
+     
+     
+     
+     `,
   
 };
 
@@ -195,6 +207,8 @@ const build_letter_pixels = (letter) => {
   if(letter === '!') letter = 'exclaim';
   if(letter === '.') letter = 'period';
   if(letter === ' ') letter = 'space';
+  if(letter === ',') letter = 'comma';
+  if(letter === '\'') letter = 'quote';
   
   let pixel_array = characters[letter].split('\n');
   return pixel_array;
